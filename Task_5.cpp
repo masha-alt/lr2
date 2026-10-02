@@ -2,17 +2,22 @@
 
 int main() {
     double X, Y;
-    std::cout << "--- Ветка main (с тернарной операцией и bool) ---" << std::endl;
+    std::cout << "--- Ветка control (без тернарной операции и без bool) ---" << std::endl;
     std::cout << "Введите два вещественных числа X и Y: ";
     if (!(std::cin >> X >> Y)) {
         std::cerr << "Ошибка ввода!" << std::endl;
         return 1;
     }
 
-    bool is_X_greater = (X > Y);
+    double max_val;
 
-    double max_val = is_X_greater ? X : Y;
+    if (X > Y) {
+        max_val = X;
+    } else {
+        max_val = Y;
+    }
 
     std::cout << "Максимальное число: " << max_val << std::endl;
     return 0;
 }
+
