@@ -1,0 +1,2 @@
+g++ -O1 -g -fsanitize=undefined Task_8.cpp -o Task_8_ubsan.exe
+./Task_8_ubsan.exe

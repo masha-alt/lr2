@@ -1,0 +1,2 @@
+g++ -O1 -g -fsanitize=thread Task_8.cpp -o Task_8_tsan.exe
+./Task_8_tsan.exe
